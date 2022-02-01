@@ -144,7 +144,7 @@ const About: React.FunctionComponent<AboutProps> = (props) => {
               <CardContent>
                 <div style={{ display: "flex", flexDirection: "column" }}>
                   {biodataChild(<PersonIcon />, "Name", "Abdul Gopur")}
-                  {biodataChild(<InsertInvitationIcon />, "Date of birth", "june 23th 1999")}
+                  {biodataChild(<InsertInvitationIcon />, "Date of birth", "June 23th 1999")}
                   {biodataChild(<LocalPhoneIcon />, "Phone", "+628980354641")}
                   {biodataChild(<AlternateEmailIcon />, "Email", "abdulgopur2306@gmail.com")}
                   {biodataChild(<FmdGoodIcon />, "Address", "Purwakarta, Indonesia")}
