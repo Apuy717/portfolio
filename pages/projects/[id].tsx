@@ -64,11 +64,11 @@ const ProjectPage: NextPage<ProjectPageProps> = (props) => {
               />
             </Grid>
           </ContainerGrid>
-          <ContainerGrid>
+          {/* <ContainerGrid>
             <Grid item xs={12} md={8}>
               <Markdown content={content} />
             </Grid>
-          </ContainerGrid>
+          </ContainerGrid> */}
         </ProjectContainer>
       </MainLayout>
     </>
