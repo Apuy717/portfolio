@@ -112,7 +112,7 @@ const About: React.FunctionComponent<AboutProps> = (props) => {
 
   const biodataChildLink = (icon: any, title: string, value: string, href: string) => {
     return (
-      <a href={href} target="_blank" style={{ textDecoration: "none", color: "#383858" }}>
+      <a href={href} target="_blank" rel="noreferrer" style={{ textDecoration: "none", color: "#383858" }}>
         <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
           <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
             {icon}
