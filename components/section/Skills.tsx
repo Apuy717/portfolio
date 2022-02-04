@@ -50,18 +50,11 @@ const Skills: React.FunctionComponent<SkillsProps> = (props) => {
   ];
 
   const testData: Array<{ title: string; bgcolor: string; completed: number }> = [
-    { title: "HTML5", bgcolor: "#11468F", completed: 95 },
-    { title: "CSS", bgcolor: "#11468F", completed: 80 },
-    { title: "SASS", bgcolor: "#11468F", completed: 80 },
-    { title: "Bootstrap", bgcolor: "#11468F", completed: 80 },
-    { title: "Tailwind CSS", bgcolor: "#11468F", completed: 80 },
-    { title: "jQuery", bgcolor: "#11468F", completed: 80 },
     { title: "ReactJs", bgcolor: "#11468F", completed: 90 },
     { title: "React Native", bgcolor: "#11468F", completed: 85 },
     { title: "PHP", bgcolor: "#11468F", completed: 80 },
     { title: "Laravel", bgcolor: "#11468F", completed: 80 },
     { title: "Node Js", bgcolor: "#11468F", completed: 80 },
-    { title: "Express js", bgcolor: "#11468F", completed: 90 },
     { title: "Mysql", bgcolor: "#11468F", completed: 95 },
     { title: "MongoDB", bgcolor: "#11468F", completed: 90 },
   ];

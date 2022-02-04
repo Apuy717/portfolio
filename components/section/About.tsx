@@ -32,6 +32,7 @@ import InsertInvitationIcon from "@mui/icons-material/InsertInvitation";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import FmdGoodIcon from "@mui/icons-material/FmdGood";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 // type
 interface AboutProps {}
 
@@ -109,6 +110,22 @@ const About: React.FunctionComponent<AboutProps> = (props) => {
     );
   };
 
+  const biodataChildLink = (icon: any, title: string, value: string, href: string) => {
+    return (
+      <a href={href} target="_blank" style={{ textDecoration: "none", color: "#383858" }}>
+        <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+          <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+            {icon}
+            <p style={{ marginLeft: 10 }}>{title}</p>
+          </div>
+          <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+            <p>{value}</p>
+          </div>
+        </div>
+      </a>
+    );
+  };
+
   return (
     <CustomContainer id="about">
       <CustomCard>
@@ -146,6 +163,7 @@ const About: React.FunctionComponent<AboutProps> = (props) => {
                   {biodataChild(<PersonIcon />, "Name", "Abdul Gopur")}
                   {biodataChild(<InsertInvitationIcon />, "Date of birth", "June 23th 1999")}
                   {biodataChild(<LocalPhoneIcon />, "Phone", "+628980354641")}
+                  {biodataChildLink(<WhatsAppIcon />, "WhatsApp", "+628980354641", "https://wa.me/+628980354641")}
                   {biodataChild(<AlternateEmailIcon />, "Email", "abdulgopur2306@gmail.com")}
                   {biodataChild(<FmdGoodIcon />, "Address", "Purwakarta, Indonesia")}
                 </div>

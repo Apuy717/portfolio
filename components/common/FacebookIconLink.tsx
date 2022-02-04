@@ -1,37 +1,20 @@
 // react
-import * as React from 'react';
+import * as React from "react";
 // @mui icon
-import FacebookIcon from '@mui/icons-material/Facebook';
+import FacebookIcon from "@mui/icons-material/Facebook";
 // custom component
-import IconButtonLink from 'components/common/IconButtonLink';
+import IconButtonLink from "components/common/IconButtonLink";
 // type
-import { IconButtonProps } from '@mui/material';
+import { IconButtonProps } from "@mui/material";
 interface FacebookIconLinkProps extends IconButtonProps {
   anchorStyles?: React.CSSProperties;
   href?: string;
-  iconColor?:
-    | 'inherit'
-    | 'action'
-    | 'disabled'
-    | 'primary'
-    | 'secondary'
-    | 'error'
-    | 'info'
-    | 'success'
-    | 'warning';
-  iconSize?: 'inherit' | 'large' | 'medium' | 'small' | undefined;
+  iconColor?: "inherit" | "action" | "disabled" | "primary" | "secondary" | "error" | "info" | "success" | "warning";
+  iconSize?: "inherit" | "large" | "medium" | "small" | undefined;
 }
 
-const FacebookIconLink: React.FunctionComponent<FacebookIconLinkProps> = (
-  props
-) => {
-  const {
-    anchorStyles,
-    href = '#',
-    iconColor = 'inherit',
-    iconSize = 'inherit',
-    ...otherProps
-  } = props;
+const FacebookIconLink: React.FunctionComponent<FacebookIconLinkProps> = (props) => {
+  const { anchorStyles, href = "#", iconColor = "inherit", iconSize = "inherit", ...otherProps } = props;
 
   return (
     <IconButtonLink aria-label="Facebook button" href={href} {...otherProps}>
